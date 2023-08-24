@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
+    <title>Carrito de compras</title>
+</head>
+
+<body class="bg-gray-100 p-8">
+
+    <header class="bg-blue-500 text-white text-center py-2 h-[fit-content]"></header>
+
+
+    <h1 class="text-4xl font-bold text-center font-poppins mb-8">Carrito de compras</h1>
+
+    <div class="text-center mb-2">
+        <button id="finalizar"
+            class="text-3xl font-bold font-poppins mb-8 bg-blue-500 text-white rounded-lg px-4 py-2 inline-block">
+            <input type="button">Finalizar Compra
+        </button>
+    </div>
+
+
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div id="producto1" class="bg-white p-4 rounded-lg shadow-md text-center">
+            <img src="./img-catalogo/zapatillas retro homnbre.webp" alt="Product 1"
+                class="mx-auto mb-2 rounded-lg w-32 h-32 object-cover">
+            <h2 class="text-xl font-semibold mb-2">Zapatillas</h2>
+            <p class="text-gray-600">#</p>
+            <button class="mt-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Añadir a Carrito</button>
+            <p class="precio"><strong>$2000</strong></p>
+            <label class="font-poppins font-bold text-blue-500" for="cantidad-producto1">Cantidad:</label>
+            <input type="number" id="cantidad-producto1" value="1" min="1" class="w-16 p-2 rounded shadow">
+        </div>
+
+        <div id="producto2" class="bg-white p-4 rounded-lg shadow-md text-center">
+            <img src="./img-catalogo/pantalones.jpg" alt="Product 2"
+                class="mx-auto mb-2 rounded-lg w-32 h-32 object-cover">
+            <h2 class="text-xl font-semibold mb-2">Pantalones</h2>
+            <p class="text-gray-600">#</p>
+            <button class="mt-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Añadir a Carrito</button>
+            <p class="precio"><strong>$1500</strong></p>
+            <label class="font-poppins font-bold text-blue-500" for="cantidad-producto2">Cantidad:</label>
+            <input type="number" id="cantidad-producto2" value="1" min="1" class="w-16 p-2 rounded shadow">
+        </div>
+
+        <div id="producto3" class="bg-white p-4 rounded-lg shadow-md text-center">
+            <img src="./img-catalogo/remeras.jpg" alt="Product 3"
+                class="mx-auto mb-2 rounded-lg w-32 h-32 object-cover">
+            <h2 class="text-xl font-semibold mb-2">Remeras</h2>
+            <p class="text-gray-600">#</p>
+            <button class="mt-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Añadir a Carrito</button>
+            <p class="precio"><strong>$800</strong></p>
+            <label class="font-poppins font-bold text-blue-500" for="cantidad-producto3">Cantidad:</label>
+            <input type="number" id="cantidad-producto3" value="1" min="1" class="w-16 p-2 rounded shadow">
+        </div>
+
+        <div id="producto4" class="bg-white p-4 rounded-lg shadow-md text-center">
+            <img src="./img-catalogo/buzos.jpg" alt="Product 4" class="mx-auto mb-2 rounded-lg w-32 h-32 object-cover">
+            <h2 class="text-xl font-semibold mb-2">Buzos</h2>
+            <p class="text-gray-600">#</p>
+            <button class="mt-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Añadir a Carrito</button>
+            <p class="precio"><strong>$1000</strong></p>
+            <label class="font-poppins font-bold text-blue-500" for="cantidad-producto4">Cantidad:</label>
+            <input type="number" id="cantidad-producto4" value="1" min="1" class="w-16 p-2 rounded shadow">
+        </div>
+
+        <div id="producto5" class="bg-white p-4 rounded-lg shadow-md text-center">
+            <img src="./img-catalogo/camperas.jpg" alt="Product 5"
+                class="mx-auto mb-2 rounded-lg w-32 h-32 object-cover">
+            <h2 class="text-xl font-semibold mb-2">Camperas</h2>
+            <p class="text-gray-600">#</p>
+            <button class="mt-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Añadir a Carrito</button>
+            <p class="precio"><strong>$3000</strong></p>
+            <label class="font-poppins font-bold text-blue-500" for="cantidad-producto5">Cantidad:</label>
+            <input type="number" id="cantidad-producto5" value="1" min="1" class="w-16 p-2 rounded shadow">
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
+</body>
+
+</html>
