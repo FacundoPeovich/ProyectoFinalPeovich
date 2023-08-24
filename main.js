@@ -78,7 +78,7 @@ botonFinalizar.addEventListener('click', () => {
 
         Swal.fire({
             title: 'Resumen de la Compra',
-            html: `<pre>${resumen}</pre>`, // Usa el elemento <pre> para mantener los saltos de línea
+            html: `<pre>${resumen}</pre>`, // Elemento <pre> para mantener los saltos de línea
             confirmButtonText: 'Finalizar Compra'
         }).then((result) => {
             if (result.isConfirmed) {
