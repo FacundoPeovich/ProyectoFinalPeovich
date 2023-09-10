@@ -1,0 +1,37 @@
+[
+    {
+        "id": "producto1",
+        "nombre": "Zapatillas",
+        "imagen": "./img-catalogo/zapatillas retro homnbre.webp",
+        "descripcion": "Descripción de las zapatillas.",
+        "precio": 2000
+    },
+    {
+        "id": "producto2",
+        "nombre": "Pantalones",
+        "imagen": "./img-catalogo/pantalones.jpg",
+        "descripcion": "Descripción de los pantalones.",
+        "precio": 1500
+    },
+    {
+        "id": "producto3",
+        "nombre": "Remeras",
+        "imagen": "./img-catalogo/remeras.jpg",
+        "descripcion": "Descripción de las remeras.",
+        "precio": 800
+    },
+    {
+        "id": "producto4",
+        "nombre": "Buzos",
+        "imagen": "./img-catalogo/buzos.jpg",
+        "descripcion": "Descripción de los buzos.",
+        "precio": 1000
+    },
+    {
+        "id": "producto5",
+        "nombre": "Camperas",
+        "imagen": "./img-catalogo/camperas.jpg",
+        "descripcion": "Descripción de las camperas.",
+        "precio": 3000
+    }
+]
