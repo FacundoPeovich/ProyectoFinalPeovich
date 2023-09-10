@@ -154,8 +154,6 @@ botonFinalizar.addEventListener('click', () => {
     } else {
         // Mostrar el formulario de checkout
         mostrarCheckout();
-        const checkoutSection = document.getElementById('checkout');
-        checkoutSection.scrollIntoView({ behavior: 'smooth' });
     }
 });
 
@@ -168,7 +166,7 @@ checkoutForm.addEventListener('submit', (e) => {
     const nombre = document.getElementById('nombre').value;
     const tarjeta = document.getElementById('tarjeta').value;
 
-    // Una vez que la compra se ha completado con éxito, puedes limpiar el carrito
+    // Una vez que la compra se ha completado con éxito, se limpia el carrito
     carrito.length = 0;
     const inputsCantidad = document.querySelectorAll('input[type="number"]');
     inputsCantidad.forEach((input) => {
@@ -190,6 +188,6 @@ checkoutForm.addEventListener('submit', (e) => {
     });
 });
 
-// Al cargar la página, recupera el carrito de LocalStorage
+// Al cargar la página, se recupera el carrito de LocalStorage
 recuperarCarritoDeLocalStorage();
 
