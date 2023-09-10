@@ -154,6 +154,8 @@ botonFinalizar.addEventListener('click', () => {
     } else {
         // Mostrar el formulario de checkout
         mostrarCheckout();
+        const checkoutSection = document.getElementById('checkout');
+        checkoutSection.scrollIntoView({ behavior: 'smooth' });
     }
 });
 
